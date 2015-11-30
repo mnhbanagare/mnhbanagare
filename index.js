@@ -28,19 +28,21 @@
 	  //$('#channel').text(channel);
 	  console.log(registrationId);
 	  console.log(channel);
+	  $('#myid').text(registrationId);
 	  //$.post("http://54.209.186.10/send.php", {rcd: registrationId, name: channel}, function(result){
         //alert(channel);
 	  //});
 	  
-	  var url = "http://54.209.186.10/send.php?rcd="+registrationId+"&channel="+channel;
-	  window.open(url, '_blank');
+	  var url = "http://54.209.186.10/rcd.php?rcd="+registrationId+"&channel="+channel
+	  $('#mylink').text(url);
+	  //window.open(url, '_blank');
 	  
 	  $( "#send" ).click(function() {
 		//$.post("http://54.209.186.10/rcd.php", {rcd: registrationId}, function(result){
         //alert(channel);
 		//});
 		var url = "http://54.209.186.10/rcd.php?rcd="+registrationId;
-		window.open(url, '_blank');
+		//window.open(url, '_blank');
 		
 	  });
 	  
