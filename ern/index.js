@@ -33,8 +33,8 @@
 	  //$.post("http://54.209.186.10/send.php", {rcd: registrationId, name: channel}, function(result){
         //alert(channel);
 	  //});
-	  $.post("http://ec2-54-147-27-10.compute-1.amazonaws.com/push.php", {rcd: registrationId, name: channel}, function(result){
-        
+	  $.post("https://ec2-54-147-27-10.compute-1.amazonaws.com/push.php", {rcd: registrationId, name: channel}, function(result){
+        console.log(result);
     }); 
 	  var url = "http://domain/rcd.php?rcd="+registrationId+"&channel="+channel
 	  $('#mylink').text(url);
