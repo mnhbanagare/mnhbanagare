@@ -46,7 +46,7 @@ self.addEventListener('push', function(event) {
 
       var title = 'An error occurred';
       var message = 'We were unable to get the information for this push message';  
-      var icon = 'https://nextvnews.com/wp-content/uploads/2016/06/photo.jpg';  
+      var icon = 'https://mnhbanagare.github.io/mnhbanagare/logo.jpg';  
       var notificationTag = 'notification-error';  
       return self.registration.showNotification(title, {  
           body: message,  

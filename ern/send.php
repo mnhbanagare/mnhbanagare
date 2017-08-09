@@ -48,6 +48,9 @@ function send_gcm_notify($reg_id, $message) {
 //mahesh er
 $reg_id = "c_l6xKDUDms:APA91bFlJcj98s4M1Y18EQkppGalfKxUaOj9T3GhZMEf3Bu3LMR2zKJJpxkxs486g97-yo_Gy1ivjePy79ud3MKC7PFqnjXZnfe4OmlehRchxBt2XecZ1x_sGry2uy2o9LCuTOwrjhK4";
 
+//ern
+$reg_id = "fu3bo1zHPBk:APA91bFzSE2tSmDu4JG_mVGsG61xI3ze12K2IlNG3YZsIgCvwdzI9ZgSSpsDPb3H3vKGNdXnb1tStXefU4kRn7FDwuDgVnCYaRLjWkd6DaNTwebrtvPiLJe4-BzhE-4l9HFoWmbD4rax";
+
 //$reg_id = $_REQUEST['rcd'];
 $msg = "Google Cloud Messaging Testing";
 
