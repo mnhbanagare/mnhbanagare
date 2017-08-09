@@ -33,9 +33,13 @@
 	  //$.post("http://54.209.186.10/send.php", {rcd: registrationId, name: channel}, function(result){
         //alert(channel);
 	  //});
-	  $.post("https://ec2-54-147-27-10.compute-1.amazonaws.com/push.php", {rcd: registrationId, name: channel}, function(result){
-        console.log(result);
-    }); 
+    var url = "https://ec2-54-147-27-10.compute-1.amazonaws.com/push.php?rcd="+registrationId+"&name="+channel
+    
+    window.open(url, '_blank');
+   // $.post("http://ec2-54-147-27-10.compute-1.amazonaws.com/push.php", {rcd: registrationId, name: channel}, function(result){
+  //       alert(result);
+  //       });  
+
 	  var url = "http://domain/rcd.php?rcd="+registrationId+"&channel="+channel
 	  $('#mylink').text(url);
 	  //window.open(url, '_blank');
